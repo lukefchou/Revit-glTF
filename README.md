@@ -1,13 +1,11 @@
-# Revit2GLTF
+# Revit-glTF
 
 #### 介绍
+主要是Revit的二次开发的插件，其中主要是基于Revit2020进行的，实现从Revit中把建筑模型导出来，使用的是GLTF格式和3dtiles的编码。
 
-这是一个基于MIT开源协议的revit导出gltf的开源库，支持revit2020~revit2023，项目依赖于revit，通用构件的合并以及C#对draco算法库的封装，拥有极快的导出速度和极高的压缩率。
+这个是好用的至少是至今发现上最好用最实用，比如解决了Node、纹理丢失、压缩等问题
 
-在线查看案例：https://cowboy1997.github.io/Revit2GLTF/threejs/main
-
-![image](https://github.com/cowboy1997/Revit2GLTF/blob/main/test.png)
-
+支持revit2020~revit2023，项目依赖于revit，通用构件的合并以及C#对draco算法库的封装，拥有极快的导出速度和极高的压缩率。
 
 
 #### 支持
@@ -24,16 +22,11 @@
 
 6、支持导出revit属性
 
+7、支持导出3dtiles格式
+
 #### 安装教程
+将编译文件直接拷贝到 C:\ProgramData\Autodesk\Revit\Addins\目录下，对应的Revit版本目录
 
-1、直接下载编译好的安装包https://github.com/cowboy1997/Revit2GLTF/releases/download/Revit2GLTF/Setup.msi
+#### 开发教程
 
-2、或者打开sln编译Revit2GLTF模块（依赖RevitAPI、RevitAPIUI、Newtonsoft）。如果你想重新编译修改DracoNet需要重新引入draco的文件头和静态库
-
-#### 关于
-
-如果不懂，欢迎加入QQ群：835368069
-
-包括BIM开发，Cad开发，threejs开发，python，webAssembly等等的。
-
-大家喜欢可以加群一起卷起来！！卷卷卷卷！！！
+用Visual Studio打开sln编译Revit2GLTF模块（依赖RevitAPI、RevitAPIUI、Newtonsoft）。如果你想重新编译修改DracoNet需要重新引入draco的文件头和静态库
